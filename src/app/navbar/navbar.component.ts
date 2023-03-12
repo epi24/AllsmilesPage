@@ -6,7 +6,7 @@ import {NavLink} from "../NavLink";
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent {
   //
   navLinksEducation:NavLink[]=[
     {name:"All$miles Book Talk", link:"", },
@@ -20,17 +20,11 @@ export class NavbarComponent implements OnInit{
   ]
   navLinksAbout:NavLink[]=[
     {name:"What is All$miles", link:""},
-    {name:"How u can help All$miles", link:""}
+    {name:"How u can help", link:""}
   ];
   navLinksHead:NavLink[]=[
-
      {name:"Education", link:"", group:this.navLinksEducation},
      {name:"Affirmation", link:"", group:this.navLinksAffirmation},
      {name:"About", link:"",group:this.navLinksAbout},
-
    ];
-
-  ngOnInit() {
-  }
-
 }

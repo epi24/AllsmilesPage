@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">ALL$MILES</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navToggler"
-            aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-  <div class="collapse navbar-collapse" id="navTogglerf">
+  <div class="navbar-collapse collapse" id="navbarToggler">
     <ul class="navbar-nav">
       <li *ngFor="let navHeadItem of navLinksHead" class="nav-item dropdown"  >
-        <a class="nav-link dropdown-toggle" id="{{navHeadItem.name}}" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" id="{{navHeadItem.name}}" role="button" data-bs-toggle="dropdown"
            aria-haspopup="true" aria-expanded="false" routerLink="{{navHeadItem.link}}">
           {{navHeadItem.name}}
         </a>
